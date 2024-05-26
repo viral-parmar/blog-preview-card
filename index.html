@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      @font-face {
+        font-family: "FigTree-ExtraBold";
+        src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("woff");
+      }
+      @font-face {
+        font-family: "FigTree-SemiBold";
+        src: url("./assets/fonts/static/Figtree-SemiBold.ttf") format("woff");
+      }
+      .attribution {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: hsl(47, 88%, 63%);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+      .card {
+        width: 38.4em;
+        height: 60em;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        border: 1px solid black;
+        box-shadow: 6px 6px hsl(0, 0%, 7%);
+      }
+      img {
+        margin: 2em;
+        border-radius: 20px;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin: 2.4em;
+        gap: 12px;
+      }
+      button {
+        width: 82px;
+        height: 29px;
+        border-radius: 5px;
+        border-color: transparent;
+        background-color: hsl(47, 88%, 63%);
+      }
+      p {
+        font-family: "FigTree-SemiBold";
+        font-size: 1.6rem;
+        color: hsl(0, 0%, 50%);
+      }
+      .heading {
+        font-family: "FigTree-ExtraBold";
+        font-size: 2rem;
+
+        cursor: pointer;
+      }
+      .clr {
+        color: hsl(0, 0%, 7%);
+      }
+      .heading:hover {
+        color: hsl(47, 88%, 63%);
+      }
+      .avatar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+      }
+      .avatar p {
+        color: hsl(0, 0%, 7%);
+        font-family: "FigTree-ExtraBold";
+      }
+      .avatar img {
+        width: 3.2em;
+        height: 3.2em;
+      }
+      @media (max-width: 375px) {
+        .container {
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+          align-items: center;
+        }
+        .card {
+          width: 30em;
+          height: 50.1em;
+          display: flex;
+          flex-direction: column;
+          background-color: hsl(0, 0%, 100%);
+          border-radius: 20px;
+          border: 1px solid black;
+          box-shadow: 6px 6px hsl(0, 0%, 7%);
+        }
+        .description {
+          display: flex;
+          flex-direction: column;
+          margin: 1em 0em 1em 2em;
+          gap: 12px;
+        }
+        button {
+          width: 73px;
+          height: 26px;
+          border-radius: 5px;
+          border-color: transparent;
+          background-color: hsl(47, 88%, 63%);
+        }
+        p {
+          font-family: "FigTree-SemiBold";
+          font-size: 1.4rem;
+          color: hsl(0, 0%, 50%);
+        }
+        .heading {
+          font-family: "FigTree-ExtraBold";
+          font-size: 2rem;
+          cursor: pointer;
+        }
+        .clr {
+          color: hsl(0, 0%, 7%);
+        }
+        .heading:hover {
+          color: hsl(47, 88%, 63%);
+        }
+        .avatar {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: flex-start;
+        }
+        .avatar p {
+          color: hsl(0, 0%, 7%);
+          font-family: "FigTree-ExtraBold";
+          font-size: 1.2rem;
+        }
+        .avatar img {
+          width: 3.2em;
+          height: 3.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- <div class="article"> -->
+        <img src="./assets/images/illustration-article.svg" />
+        <!-- </div> -->
+        <div class="description">
+          <button type="button">Learning</button>
+          <p class="clr">Published 21 Dec 2023</p>
+
+          <p class="heading clr">HTML & CSS foundations</p>
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="avatar">
+          <img src="./assets/images/image-avatar.webp" />
+          <p>Greg Hooper</p>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Viral Parmar</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
